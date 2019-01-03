@@ -40,6 +40,24 @@
 			background-color: black;
 			color: white;
 		}
+
+		@media screen and (max-width: 900px), (max-height: 600px) {
+			.reveal .slides {
+				font-size: 0.82em;
+			}
+		}
+
+		@media screen and (max-width: 700px), (max-height: 400px) {
+			.reveal .slides {
+				font-size: 0.66em;
+			}
+		}
+		.container{
+			display: flex;
+		}
+		.col{
+			flex: 1;
+		}
 	</style>
 </head>
 
@@ -685,7 +703,7 @@
 			margin: 0,
 			minScale: 1,
 			maxScale: 1,
-			transition: "slide",
+			transition: "none",
 			backgroundTransition: "slide",
 			center: false,
 			controlsLayout: 'bottom-right',

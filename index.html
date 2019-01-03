@@ -23,16 +23,17 @@
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 	<style>
-		[tooltip]:before {            
-			position : absolute;
-			content : attr(tooltip);
-			opacity : 0;
+		[tooltip]:before {
+			position: absolute;
+			content: attr(tooltip);
+			opacity: 0;
 		}
-		[tooltip]:hover:before {        
-			opacity : 1;
-			top:30px;
+
+		[tooltip]:hover:before {
+			opacity: 1;
+			top: 30px;
 			width: 200px;
-			left:-30px;	
+			left: -30px;
 		}
 	</style>
 </head>
@@ -66,7 +67,8 @@
 								 data-has-line-height="" dir="ui">
 									<p>
 										<span style="font-size:0.6em">
-											<span style="color:#D3D3D3;font-family: Quicksand;font-weight: 300;">The book cover art copyright is believed to belong to the publisher, Simon &amp;
+											<span style="color:#D3D3D3;font-family: Quicksand;font-weight: 300;">The book cover art copyright is
+												believed to belong to the publisher, Simon &amp;
 												Schuster, or the cover artist, Albert Watson.
 												<br />
 												This demo is for presenting Spext’s technology only and is not be used for any other purposes.
@@ -85,7 +87,8 @@
 					<section data-background-color="#000000">
 						<div class="sl-block" data-block-type="text" style="width: 785px; left: 15px; top: 235px; height: auto;">
 							<div class="sl-block-content" style="text-align: center; z-index: 11; color: rgb(255, 255, 255);">
-								<p style="font-family: Quicksand;font-weight: 300;font-size:0.9em;">We are creating artificial voices that sound &amp; even sing like people.</p>
+								<p style="font-family: Quicksand;font-weight: 300;font-size:0.9em;">We are creating artificial voices that
+									sound &amp; even sing like people.</p>
 								<p style="font-family: Quicksand;font-weight: 300;font-size:0.9em;">The demo shows a few applications</p>
 							</div>
 						</div>
@@ -100,7 +103,8 @@
 								 data-has-line-height="" dir="ui">
 									<p>
 										<span style="font-size:0.6em">
-											<span style="color:#D3D3D3;font-family: Quicksand;font-weight: 300;">The book cover art copyright is believed to belong to the publisher, Simon &amp;
+											<span style="color:#D3D3D3;font-family: Quicksand;font-weight: 300;">The book cover art copyright is
+												believed to belong to the publisher, Simon &amp;
 												Schuster, or the cover artist, Albert Watson.
 												<br />
 												This demo is for presenting Spext’s technology only and is not be used for any other purposes.
@@ -121,14 +125,14 @@
 							<div class="sl-block-content" style="font-family:Quicksand;font-weight:200;text-align: center; z-index: 10; color: rgb(255, 255, 255); font-size: 143%;"
 							 dir="ui">
 								<p>
-									<select>
-										<option value="">Hi..</option>
-										<option value="">Morning!</option>
-										<option value="">Namaste!</option>
-										<option value="">Bonjure</option>
-										<option value="">Ola!</option>
+									<select onchange="updateURL(1,this.value)">
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/conversion%2Ftarget%2F0-6.8.wav?alt=media&token=94706ab3-02ee-40d5-928e-6fdb0fcb80b4">Hi..</option>
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2F1_a.wav?alt=media&token=3042662e-3dfc-4e87-a293-b4acb14f2a18">Morning!</option>
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2F1_namste.wav?alt=media&token=2c051200-031e-42b2-8b63-6461978e2dcf">Namaste!</option>
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2F1_bonjure.wav?alt=media&token=dd1e31b1-1114-4fef-ad9f-b577bad2e48a">Bonjure</option>
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2F1_ola.wav?alt=media&token=edaa22a0-d6cd-4252-a742-43ac221d31b7">Ola!</option>
 									</select>
-								those of you don't know me, my name is Steve Jobs</p>
+									those of you don't know me, my name is Steve Jobs</p>
 							</div>
 						</div>
 						<div class="sl-block" data-block-type="image" style="width: 402px; height: 630px; left: 800px; top: 39px; min-width: 4px; min-height: 4px;">
@@ -188,9 +192,10 @@
 								<img style="" data-natural-width="112" data-natural-height="36" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/13959/images/5640315/Group_2.svg" />
 							</div>
 						</div>
-						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 378px; top: 432px;">
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 300px; top: 432px;">
 							<div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(204, 0, 0)"
 							 data-shape-stretch="true" style="z-index: 17;">
+							 <audio id="myAudio1" src="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/conversion%2Ftarget%2F0-6.8.wav?alt=media&token=94706ab3-02ee-40d5-928e-6fdb0fcb80b4" controls></audio>
 								<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none"
 								 viewBox="0 2 32 28">
 									<g class="shape-element" fill="rgb(204, 0, 0)">
@@ -204,7 +209,13 @@
 						<div class="sl-block" data-block-type="text" style="width: 640px; left: 138px; top: 235px; height: auto;">
 							<div class="sl-block-content" style="font-family:Quicksand;font-weight:200;text-align: center; z-index: 10; color: rgb(255, 255, 255); font-size: 133%;"
 							 dir="ui">
-								<p>One is Sun Solaris Software. The other is Microsoft and 3rd is Telegence.</p>
+								<p>One is Sun Solaris Software. The other is
+									<select onchange="updateURL(2,this.value)">
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/conversion%2Ftarget%2F537baa7db0d3-1483.49-1489.3.wav?alt=media&token=3e53f36c-d016-4554-b75c-e7a65c43aa61">Microsoft</option>
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2F6_google.wav?alt=media&token=2548ebcd-d2f0-4e49-aed9-0fe7c969a144">Google</option>
+										<option value="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2F6_oracle.wav?alt=media&token=1057a5b5-a50d-434e-9879-a0b20a7d9fbf">Oracle</option>
+									</select>
+									and 3rd is Telegence.</p>
 							</div>
 						</div>
 						<div class="sl-block" data-block-type="image" style="width: 402px; height: 630px; left: 800px; top: 39px; min-width: 4px; min-height: 4px;">
@@ -263,9 +274,10 @@
 								<img style="" data-natural-width="112" data-natural-height="36" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/13959/images/5640315/Group_2.svg" />
 							</div>
 						</div>
-						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 378px; top: 432px;">
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 300px; top: 432px;">
 							<div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(204, 0, 0)"
 							 data-shape-stretch="true" style="z-index: 17;">
+								<audio id="myAudio2" src="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/conversion%2Ftarget%2F537baa7db0d3-1483.49-1489.3.wav?alt=media&token=3e53f36c-d016-4554-b75c-e7a65c43aa61" controls></audio>
 								<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none"
 								 viewBox="0 2 32 28">
 									<g class="shape-element" fill="rgb(204, 0, 0)">
@@ -334,7 +346,7 @@
 								<img style="" data-natural-width="112" data-natural-height="36" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/13959/images/5640315/Group_2.svg" />
 							</div>
 						</div>
-						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 378px; top: 432px;">
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 300px; top: 432px;">
 							<div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(204, 0, 0)"
 							 data-shape-stretch="true" style="z-index: 17;">
 								<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none"
@@ -343,11 +355,13 @@
 										<path d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path>
 									</g>
 								</svg> -->
+								<audio src="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2Fjingle_o1.wav?alt=media&token=b66533d0-51da-4e3a-b6cf-2732a49f51f6"
+								 controls></audio>
 							</div>
 						</div>
 					</section>
 					<section data-background-color="#000000">
-						<div class="sl-block" data-block-type="text" style="width: 640px; left: 138px; top: 235px; height: auto;">
+						<div class="sl-block" data-block-type="text" style="width: 640px; left: 200px; top: 400px; height: auto;">
 							<div class="sl-block-content" style="font-family:Quicksand;font-weight:200;text-align: center; z-index: 10; color: rgb(255, 255, 255); font-size: 133%;"
 							 dir="ui">
 								<p>What if everyone could hear him in their own language?</p>
@@ -415,7 +429,7 @@
 						<div class="sl-block" data-block-type="text" style="width: 640px; left: 138px; top: 226px; height: auto;">
 							<div class="sl-block-content" style="text-align: center; z-index: 11; color: rgb(255, 255, 255); font-size: 133%;"
 							 dir="ui">
-								<p>मेरा   नाम   है   स्टीव   जॉब्स   और   आप   मुझे   हिंदी   बोलते   देख   सकते   हैं,   Spext   की   टेक्नोलॉजी   की   वज़ह   से.</p>
+								<p>मेरा नाम है स्टीव जॉब्स और आप मुझे हिंदी बोलते देख सकते हैं, Spext की टेक्नोलॉजी की वज़ह से.</p>
 							</div>
 						</div>
 						<div class="sl-block" data-block-type="image" style="width: 402px; height: 630px; left: 800px; top: 39px; min-width: 4px; min-height: 4px;">
@@ -464,7 +478,7 @@
 								<img style="" data-natural-width="112" data-natural-height="36" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/13959/images/5640315/Group_2.svg" />
 							</div>
 						</div>
-						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 378px; top: 432px;">
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 144px; left: 300px; top: 432px;">
 							<div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(204, 0, 0)"
 							 data-shape-stretch="true" style="z-index: 18;">
 								<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none"
@@ -473,6 +487,8 @@
 										<path d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path>
 									</g>
 								</svg> -->
+								<audio src="https://firebasestorage.googleapis.com/v0/b/dev-podcastpi.appspot.com/o/public%2Fh2.wav?alt=media&token=90e9aa42-7052-4006-995a-15e5987012b3"
+								 controls></audio>
 							</div>
 						</div>
 					</section>
@@ -516,6 +532,12 @@
 				}
 			]
 		});
+	</script>
+	<script>
+		function updateURL(key, url) {
+			console.log(key,url)
+			document.getElementById('myAudio' + key).src = url
+		}
 	</script>
 </body>
 

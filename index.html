@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>Spext Demo</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
@@ -22,6 +22,19 @@
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
+	<style>
+		[tooltip]:before {            
+			position : absolute;
+			content : attr(tooltip);
+			opacity : 0;
+		}
+		[tooltip]:hover:before {        
+			opacity : 1;
+			top:30px;
+			width: 200px;
+			left:-30px;	
+		}
+	</style>
 </head>
 
 <body>
@@ -105,9 +118,17 @@
 					</section>
 					<section data-background-color="#000000">
 						<div class="sl-block" data-block-type="text" style="width: 640px; left: 138px; top: 235px; height: auto;">
-							<div class="sl-block-content" style="font-family:Quicksand;font-weight:200;text-align: center; z-index: 10; color: rgb(255, 255, 255); font-size: 163%;"
+							<div class="sl-block-content" style="font-family:Quicksand;font-weight:200;text-align: center; z-index: 10; color: rgb(255, 255, 255); font-size: 143%;"
 							 dir="ui">
-								<p>Hi those of you don't know me, my name is Steve Jobs</p>
+								<p>
+									<select>
+										<option value="">Hi..</option>
+										<option value="">Morning!</option>
+										<option value="">Namaste!</option>
+										<option value="">Bonjure</option>
+										<option value="">Ola!</option>
+									</select>
+								those of you don't know me, my name is Steve Jobs</p>
 							</div>
 						</div>
 						<div class="sl-block" data-block-type="image" style="width: 402px; height: 630px; left: 800px; top: 39px; min-width: 4px; min-height: 4px;">
@@ -394,8 +415,7 @@
 						<div class="sl-block" data-block-type="text" style="width: 640px; left: 138px; top: 226px; height: auto;">
 							<div class="sl-block-content" style="text-align: center; z-index: 11; color: rgb(255, 255, 255); font-size: 133%;"
 							 dir="ui">
-								<p>मेरा &nbsp; नाम &nbsp; है &nbsp; सीव &nbsp; जॉब &nbsp; और &nbsp; आप &nbsp; मुझे &nbsp; िहंदी &nbsp; बोलते
-									&nbsp; देख &nbsp; सकते &nbsp; है, &nbsp; Spext &nbsp; की &nbsp; टेकोलॉजी &nbsp; की &nbsp; वज़ह &nbsp;से.</p>
+								<p>मेरा   नाम   है   स्टीव   जॉब्स   और   आप   मुझे   हिंदी   बोलते   देख   सकते   हैं,   Spext   की   टेक्नोलॉजी   की   वज़ह   से.</p>
 							</div>
 						</div>
 						<div class="sl-block" data-block-type="image" style="width: 402px; height: 630px; left: 800px; top: 39px; min-width: 4px; min-height: 4px;">
@@ -421,7 +441,7 @@
 								</svg>
 							</div>
 						</div>
-						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 100px; top: 187px;">
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 150px; top: 187px;">
 							<div class="sl-block-style" style="z-index: 15; opacity: 0.5;">
 								<div class="sl-block-content" style="z-index: 15; font-size: 75%;">
 									<p>
@@ -434,7 +454,7 @@
 							<div class="sl-block-style" style="z-index: 16; opacity: 0.5;">
 								<div class="sl-block-content" style="z-index: 16; font-size: 75%;">
 									<p>
-										<span style="color:#D3D3D3;font-family:Quicksand;font-weight:200;">Translate</span>
+										<span tooltip="My name is Steve Jobs and you can hear me speak Hindi because of Spext's technology" style="color:#D3D3D3;font-family:Quicksand;font-weight:200;cursor:pointer;">Translate</span>
 									</p>
 								</div>
 							</div>
